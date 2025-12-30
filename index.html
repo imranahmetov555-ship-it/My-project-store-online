@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коллаген — польза и применение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+ <div class="logo">
+  <img src="img/vitaboost_logo_transparent.png">
+  <p>ИНТЕРНЕТ-МАГАЗИН</p>
+ </div>
+
+ 
+  
+  <nav class="nav" id="nav">
+    <div class="logor">VITABOOST</div>
+    <ul class="nav-links">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Жалобы</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+
+   
+       
+   
+
+
+
+  
+</header>
+
+<section class="hero">
+  <h1>Коллаген</h1>
+<style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* чтобы контент не залезал под nav */
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 1000;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+
+.logor {
+  color: #55a30b;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  padding: 8px 12px;
+  transition: 0.3s;
+ 
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8e9807, #00cfff);
+  transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+
+.burger {
+  width: 35px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffffff, #6d9c15);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+@media (max-width: 768px) {
+.logor{
+  color: rgb(74, 149, 16);
+}
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(15, 15, 15, 0.97);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+   
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 26px;
+    
+    padding: 10px 80px;
+    gap: 20px;
+  }
+}
+</style>
+  <div class="cont1">
+ 
+    
+        <div class="catalog ">
+           
+        <div class="item">
+        <img src="https://i.ebayimg.com/images/g/djwAAOSwl4dhVAtm/s-l1200.jpg">
+               
+                <p>Red Magic 10 Pro</p>
+                 
+               <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+                 </div>
+           
+            <div class="item">
+              <img src="https://i.ebayimg.com/images/g/djwAAOSwl4dhVAtm/s-l1200.jpg">
+               
+                <p>Realme GT7 Pro</p>
+               
+                <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+                 </div>
+            
+            <div class="item">
+              <img src="https://ir.ozone.ru/s3/multimedia-7/c1000/6609022135.jpg">
+                
+                <p>Google Pixel 10 Pro</p>
+               
+                 <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+                 </div>
+            
+
+            <div class="item">
+              <img src="https://shopme365.com/image/cache/catalog/korea/healts/bad/HP_double_glutatione-550x550w.jpg">
+               
+                <p>Samsung S25 ULTRA </p>
+               
+                 <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+             </div>
+                
+
+                <div class="item">
+                  <img src="https://ekb.hi-stores.ru/upload/iblock/174/d39616q452obe5dugqb4d7sk0exsf4pa.jpg">
+              
+                <p>OnePlus 15</p>
+                <p>999 <strong>$</strong></p>
+              <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+                 </div>
+        
+  
+            <div class="item">
+              <img src="https://pdaplaza.ca/wp-content/uploads/2025/10/buy-vivo-x300-pro-5g-dual-sim-16gb-512gb-free-blue-cn-version-298.jpg">
+               
+                <p>Vivo X300 Pro</p>
+                <p>799 <strong>$</strong></p>
+                <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+
+            <div class="item">
+                <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/YKg75Fn-TG-appleiphone17promax-mp-494741654-i-1-1200wx1200h.jpeg">
+
+                 
+                <p>Apple iPhone 17 Pro </p>
+                <p>1199 <strong>$</strong></p>
+                 <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+                      </div>
+
+            <div class="item">
+                <img src="https://phonesell.com.bd/wp-content/uploads/2025/05/xiaomi-poco-f7-pro-silver-official-image.webp">
+
+               
+                <p>POCO F7 ULTRA</p>
+                <p>799 <strong>$</strong></p>
+                 <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+
+               <div class="item">
+                <img src="https://cdn.shopify.com/s/files/1/0552/0883/7292/files/Xiaomi-17-Pro-Max-black-1.jpg?v=1760686861&width=600">
+              
+                <p>Xiaomi 17 Pro MAX</p>
+                <p>1100 <strong>$</strong></p>
+                <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+
+            <div class="item">
+                <img src="https://www.giztop.com/media/catalog/product/cache/97cc1143d2e20f2b0c8ea91aaa12053c/x/8/x8-pro-blue.jpg">
+              
+                <p>OPPO Find X8 Pro</p>
+                <p>1049 <strong>$</strong></p>
+                <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+
+            <div class="item">
+             <img src="https://brotherselectronicsbd.com/image/cache/catalog/demo/huawei/huawei%20pura%2080%20ultra%20gold/huawei%20pura%2080%20ultra%20gold-800x800.png">
+                
+                <p>Huawei Pura 80 Ultra </p>
+                <p >1300 <strong>$</strong></p>
+                <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+
+           <div class="item">
+               <img src="https://object.pscloud.io/cms/cms/Photo/img_0_77_6435_0_1_HLCpk5.jpg">
+              
+                <p>Honor Magic 7 Pro</p>
+                <p>999 <strong>$</strong></p>
+                 <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+           
+               
+           </div> 
+           
+            <div class="item">
+                <img src="https://diamu.com.bd/wp-content/uploads/2024/12/iQOO-Neo-13-5G.jpg">
+               
+                <p>iQOO 13  </p>
+                <p >630 <strong>$</strong></p>
+               <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+            
+            
+            
+            
+            
+            <div class="item">
+               <img src="https://www.mijia-shop.ru/wp-content/uploads/2024/03/Meizu-21-Pro-1.jpg">
+               
+                <p>Meizu 21 Pro</p>
+                <p >899 <strong>$</strong></p>
+               <a href="Pay.HTML"><button>Купить</button></a> 
+                <button>+</button>
+            </div>
+    </div>
+                
+    </div>
+ </div>
+
+ </div>
+ 
+ 
+</section>
+
+
+</section>
+
+<footer id="contacts" class="footer">
+  <p>© 2025 Collagen Store</p>
+  <p>Тел: +996 XXX XXX XXX</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<script>
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});
+</script>

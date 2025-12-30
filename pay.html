@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коллаген — польза и применение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+ <div class="logo">
+  <img src="img/vitaboost_logo_transparent.png">
+  <p>ИНТЕРНЕТ-МАГАЗИН</p>
+ </div>
+
+ 
+  
+  <nav class="nav" id="nav">
+    <div class="logor">VITABOOST</div>
+    <ul class="nav-links">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Жалобы</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+
+   
+       
+   
+
+
+
+  
+</header>
+
+<section class="hero">
+ 
+<style>
+   
+.cont1{
+    z-index: 1;
+    background-color: #f2efef;
+
+}
+.product-container {
+  max-width: 800px;
+  height: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 140, 0.2);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin-top: -40%;
+ 
+  margin-left: 50%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #00ff99;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.product-title {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.product-subtitle {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  background: #e7e3e3;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.price {
+  color: #1eff00;
+  font-size: 20px;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.status.out {
+  background: rgb(42, 167, 11);
+  color: #fff7f7;
+  transition: 0.5s;
+}
+
+.product-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+
+
+@media (max-width: 600px) {
+  .product-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+}
+
+   
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* чтобы контент не залезал под nav */
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 1000;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+
+.logor {
+  color: #55a30b;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  padding: 8px 12px;
+  transition: 0.3s;
+ 
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8e9807, #00cfff);
+  transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+
+.burger {
+  width: 35px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffffff, #6d9c15);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+ .cont1 img{
+        width: 40%;
+        height: 30%;
+        margin-right: 50%;
+        border-radius: 5px;
+    }
+   
+.cont2{
+    background-color: #00ff88;
+    width: 80%;
+    height: 70%;
+}
+.status.out:hover{
+ transform: scale(1.07);
+ transition: 0.5s;
+ box-shadow: 0 0 25px red;
+}
+@media (max-width: 768px) {
+.logor{
+  color: rgb(74, 149, 16);
+}
+.product-container{
+  height: 70%;
+}
+.cont1 img{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(15, 15, 15, 0.97);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+   
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 26px;
+    
+    padding: 10px 80px;
+    gap: 20px;
+  }
+}
+
+</style>
+  <div class="cont1">
+ 
+    <img src="https://i.ebayimg.com/images/g/djwAAOSwl4dhVAtm/s-l1200.jpg">
+   
+  <div class="product-container">
+  <a href="#" class="back-link">← Вернуться назад</a>
+
+  <h2 class="product-title">
+    El Amor Premium Tart Cherry Collagen
+  </h2>
+
+  <p class="product-subtitle">
+    Коллаген желе – Вишня (Tart Cherry), 1 уп × 10 шт
+  </p>
+
+  <div class="product-info">
+    <div class="info-row">
+      <span>Цена:</span>
+      <strong class="price">550 сом</strong>
+    </div>
+
+    <div class="info-row">
+      <span>Артикул товара:</span>
+      <strong>WVJIG</strong>
+    </div>
+ <div class="status out">Купить</div>
+  </div>
+  <p class="product-description">
+    Корейский коллаген El Amor с вишней — это популярная добавка,
+    сочетающая в себе гидролизованный морской коллаген и натуральный
+    вишнёвый экстракт.
+    <br><br>
+    Он представлен в виде желе-стиков, что делает его удобным для
+    ежедневного употребления.
+  </p>
+</div>
+
+            </div>
+    </div>
+                
+    </div>
+ </div>
+
+ 
+ 
+</section>
+
+
+</section>
+
+
+<footer id="contacts" class="footer">
+  <p>© 2025 Collagen Store</p>
+  <p>Тел: +996 XXX XXX XXX</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<script>
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});
+</script>
